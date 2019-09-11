@@ -57,6 +57,7 @@ func translate(subscriptionKey string, uri string) {
     }
     // Add required headers to the request
     req.Header.Add("Ocp-Apim-Subscription-Key", subscriptionKey)
+    req.Header.Add("Ocp-Apim-Subscription-Region", "chinaeast2")
     req.Header.Add("Content-Type", "application/json")
 
     // Call the Translator Text API
